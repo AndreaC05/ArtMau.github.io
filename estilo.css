@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+*{
+	box-sizing: border-box;
+	font-family: 'Work Sans';
+	margin: 0;
+	padding: 0;
+}
+html{
+	/* me permite deslizar cuando clic en los link del menu */
+	scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+	background: linear-gradient(380deg, rgba(245,125,5,1) 0%, rgba(250,198,5,1) 100%);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.contenedor-header header{
+	max-width: 1100px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+}
+.contenedor-header header .logo a img{
+	width: 198px;
+	height: 48px;
+}
+.contenedor-header header ul{
+	display: flex;
+	list-style: none;
+}
+.contenedor-header header nav ul li a{
+	text-align: none;
+	color: #fff;
+	margin: 0 15px;
+	padding: 3px;
+	transition: .5s;
+	text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+	color: #a65505;
+;
+}
+.nav-responsive{
+	background-color:#ff5500;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+}
+/* SECCION I N I C I O */
+.inicio{
+	background: url(img/img1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	object-fit: fill;
+}
+.inicio .contenido-banner{
+	padding: 20px;
+	background-color: transparent;
+	max-width: 350px;
+	margin: auto;
+	text-align: center;
+	border-radius: 40px;
+}
+
+.inicio .contenido-banner h1{
+	margin-top: 40px;
+	font-size: 60px;
+	font-family: 'Righteous';
+}
+.inicio .contenido-banner h2{
+	font-size: 30px;
+	font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #ff5500;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+	background-color: #ff5500;
+}
+
+.inicio .contenido-banner .bajar {
+    display: inline-block;
+    color: #fff;
+    font-size: 4rem;
+    animation: flecha-animada 2s ease-in-out infinite;
+    -webkit-animation: flecha-animada 2s ease-in-out infinite;
+    flex: 0 1 auto; 
+}
+.inicio .contenido-banner .bajar a{
+	color: #fff;
+}
+@keyframes flecha-animada{
+        from{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+        50%{
+            transform: translateY(6px);
+            -webkit-transform: translateY(6px);
+            -moz-transform: translateY(6px);
+            -ms-transform: translateY(6px);
+            -o-transform: translateY(6px);
+        }
+        to{
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -o-transform: translateY(0);
+        }
+}
+/* SECCION RETRATO */
+.retrato{
+	background: linear-gradient(180deg, rgba(230,135,40,1) 0%, rgba(255,255,255,1) 100%);
+	color: #fff;
+	padding: 50px 20px;
+}
+.retrato .contenido-seccion {
+	max-width: 1100px;
+	margin: auto;
+}
+.retrato h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.retrato .galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.retrato .galeria .proyecto{
+	position: relative;
+	max-width: 500px;
+	height: fit-content;
+	margin: 10px;
+	cursor: pointer;
+}
+.retrato .galeria .proyecto img{
+	width: 100%;
+	display: block;
+}
+
+
+/* SECCION PINTURA */
+.pintura{
+	background: linear-gradient(360deg, rgba(230,135,40,1) 0%, rgba(255,255,255,1) 100%);
+	color: #e68728;
+	padding: 50px 20px;
+}
+.pintura .contenido-seccion {
+	max-width: 1100px;
+	margin: auto;
+}
+.pintura h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.pintura .galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.pintura .galeria .proyecto{
+	position: relative;
+	max-width: 500px;
+	height: fit-content;
+	margin: 10px;
+	cursor: pointer;
+}
+.pintura .galeria .proyecto img{
+	width: 100%;
+	display: block;
+}
+/* SECCION ARTISTA */
+.artista{
+	background: linear-gradient(180deg, rgba(230,135,40,1) 0%, rgba(255,255,255,1) 100%);
+	color: #fff;
+	padding: 50px 20px;
+}
+.artista .contenido-seccion {
+	max-width: 1100px;
+	margin: auto;
+}
+.artista h2{
+	font-size: 48px;
+	font-family: 'Righteous';
+	text-align: center;
+	padding: 20px 0;
+}
+.artista .galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.artista .galeria .presentacion{
+	position: relative;
+	max-width: 500px;
+	height: fit-content;
+	margin: 10px;
+	cursor: pointer;
+}
+.artista .galeria .presentacion img{
+	width: 100%;
+	display: block;
+}
+
+/* FOOTER */
+footer{
+	background: linear-gradient(380deg, rgba(245,125,5,1) 0%, rgba(250,198,5,1) 100%);
+	color: #fff;
+	padding: 30px 0 10px 0;
+	text-align: center;
+	position: relative;
+	width: 100%;
+}
+footer .redes{
+	margin-bottom: 20px;
+}
+footer .redes a{
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid #ff5500;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+	line-height: 42px;
+	margin: 40px 5px;
+	font-size: 20px;
+	transition: .3s;
+}
+footer .redes a:hover{
+	background-color: #ff5500;
+}
+footer .arriba{
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: #ff5500;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -25px;
+	border-radius: 50%;
+	line-height: 50px;
+	font-size: 18px;
+}
