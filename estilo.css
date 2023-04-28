@@ -277,3 +277,63 @@ footer .arriba{
 	line-height: 50px;
 	font-size: 18px;
 }
+/* responsive */
+@media screen and (max-width:980px){
+	nav{
+		display: none;
+	}
+	.nav-responsive{
+		display: block;
+	}
+	nav.responsive{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 75px;
+		background-color: #ff5500;
+		width: 180px;
+	}
+	nav.responsive ul{
+		display: block !important;
+	}
+	nav.responsive ul li{
+		border-bottom: 1px solid #fff;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width:700px){
+	.retrato .galeria{
+		display: block;
+		width: 100%;
+	}
+	.retrato .galeria .proyecto{
+		width: 100%;
+	}
+	.retrato .galeria .proyecto img{
+		width: 100%;
+	}
+
+	.pintura .galeria{
+		display: block;
+		width: 100%;
+	}
+	.pintura .galeria .proyecto{
+		max-width: 100%;
+	}
+	.pintura .galeria .proyecto img{
+		width: 100%;
+	}
+
+	.artista .galeria{
+		display: block;
+		width: 100%;
+	}
+	.artista .galeria .presentacion{
+		max-width: 100%;
+	}
+	.artista .galeria .presentacion img{
+		width: 100%;
+	}
+
+}
