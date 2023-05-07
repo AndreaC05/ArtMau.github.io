@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
-<head lang="es">
+<html lang="es-PE">
+<head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,16 @@
 	<link rel="shortcut icon" type="image/x-icon" href="logo/Picture1.png">
 	<title>ArtMau</title>
 	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 </head>
 <body>
+
 	<!-- MENU ENCABEZADO -->
-	<div class="contenedor-header">
+	<!-- <div class="contenedor-header">
 		<header>
 			<div class="logo">
-				<a href="#"><img src="logo/artmau0.1.png" alt=""></a>
+				<a href="#inicio"><img src="logo/artmau0.1.png" alt=""></a>
 			</div>
 			<nav id="nav">
 				<ul>
@@ -28,33 +32,74 @@
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</header>
-	</div>
+	</div>  -->
+
+	<nav class="orange">
+
+		<div class="container">
+
+			<a href="" class="brand-logo">
+
+				<img src="logo/artmau0.1.png" alt="">
+
+			</a>
+
+			<ul id="nav">
+
+				<li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+				<li><a href="#retrato" onclick="seleccionar()">Retratos</a></li>
+				<li><a href="#pintura" onclick="seleccionar()">Pinturas</a></li>
+				<li><a href="#artista" onclick="seleccionar()">Artista</a></li>
+
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<div class="nav-responsive" onclick="mostrarOcultarMenu()">
+
+		<i class="fa-solid fa-bars"></i>
+
+	</div> 
 
 	<!-- SECCION INICIO -->
 	<section id="inicio" class="inicio">  
+
 		<div class="contenido-banner">
+
 			<!-- <div class="contenedor-img">
 				<img src="img/img1.jpg" alt="">
 			</div> -->
+
 			<h1>Maura</h1>
 			<h2>Artista</h2>
+			<h3>Se realiza retratos a grafito en diferentes formatos A4, A3, A2</h3>
 			<div class="redes">
+
 				<a href="https://www.facebook.com/profile.php?id=100064363556502"><i class="fa-brands fa-facebook-f"></i></a>
 				<a href="https://www.instagram.com/art_mau92/"><i class="fa-brands fa-instagram"></i></a>
 				<a href="https://wa.me/c/51940007944"><i class="fa-brands fa-whatsapp"></i></a>
 				<a href="https://www.tiktok.com/@mau.cristina?_t=8bscEE5tyqb&_r=1"><i class="fa-brands fa-tiktok"></i></a>
 				<a href="mailto:mau.art92@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+
 			</div>
+
 			<div class="bajar">
+
 				<a href="#retrato"><i class="fa-solid fa-angle-down"></i></a>
+
 			</div>
+
 		</div>
+
 	</section>
 
 	<!-- SECCION RETRATO -->
-	<section class="retrato" id="retrato">
+	<!--<section class="retrato" id="retrato">
 		<div class="contenido-seccion">
 			<h2>Retratos</h2>
+			<h3>Retratos a grafito en diferentes formato A4, A3, A2</h3>
 			<div class="galeria">
 				<div class="proyecto">
 					<img src="productos/blancoynegro/bn1.jpg" alt="">
@@ -118,13 +163,196 @@
 				</div>
 			</div>
 		</div>
+	</section>-->
+
+	<section class="retrato" id="retrato">
+
+		<div class="contenido-seccion">
+
+			<div class="row">
+
+				<div class="col s12">
+					
+					<h1 class="center-align titulo">Retratos</h1>
+
+					<div class="carousel center-align">
+
+						<div class="carousel-item">
+
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn1.jpg" alt="">
+
+						</div>
+						
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn2.jpg" alt="">
+
+						</div>
+						
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn3.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn4.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn5.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn6.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn7.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn8.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn9.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn10.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn11.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn12.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A1</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">59.4cm X 84.1cm</p>
+							<img src="productos/blancoynegro/bn13.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn14.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<!-- <h2 class="subtitulo">A3</h2> -->
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">31cm X 22.5cm</p>
+							<img src="productos/blancoynegro/bn15.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn16.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A4</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">21cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn17.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn18.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<h2 class="subtitulo">A3</h2>
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">42cm X 29.7cm</p>
+							<img src="productos/blancoynegro/bn19.jpg" alt="">
+
+						</div>
+
+						<div class="carousel-item">
+							<!-- <h2 class="subtitulo">A3</h2> -->
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">25cm X 20cm</p>
+							<img src="productos/blancoynegro/bn20.jpg" alt="">
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</section>
 	
 
 	<!-- SECCION PINTURA -->
 	<section class="pintura" id="pintura">
 		<div class="contenido-seccion">
-			<h2>Pinturas</h2>
+			<!--<h2>Pinturas</h2>
 			<div class="galeria">
 				<div class="proyecto">
 					<img src="productos/color/c1.jpg" alt="">
@@ -159,13 +387,72 @@
 				<div class="proyecto">
 					<img src="productos/color/c9.jpg" alt="">
 				</div>
+			</div>-->
+
+			<div class="row">
+				<div class="col s12">
+					<h1 class="center-align titulo">Pinturas</h1>
+					<div class="carousel center-align">
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 25cm</p>
+							<img src="productos/color/c1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 25cm</p>
+							<img src="productos/color/c2.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 20cm</p>
+							<img src="productos/color/c4.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">50cm X 60cm</p>
+							<img src="productos/color/c5.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 20cm</p>
+							<img src="productos/color/c6.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 20cm</p>
+							<img src="productos/color/c7.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 20cm</p>
+							<img src="productos/color/c8.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 25cm</p>
+							<img src="productos/color/c9.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">20cm X 20cm</p>
+							<img src="productos/color/c10.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<!-- <div class="linea-division"></div> -->
+							<p class="descripcion">25cm X 20cm</p>
+							<img src="productos/color/c11.jpg" alt="">
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</div>
 	</section>
 	<!-- SECCION ARTISTA -->
 	<section class="artista" id="artista">
 		<div class="contenido-seccion">
-			<h2>Artista</h2>
+			<!--<h2>Artista</h2>
 			<div class="galeria">
 				<div class="presentacion">
 					<img src="artista/a4.jpg" alt="">
@@ -196,28 +483,76 @@
 				</div>
 				<div class="presentacion">
 					<img src="artista/a8.jpg" alt="">
+				</div>	
+			</div>-->
+			<div class="row">
+				<div class="col s12">
+					<h1 class="center-align titulo">Artista</h1>
+					<div class="carousel center-align">
+						<div class="carousel-item">
+							<img src="artista/a1.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a2.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a3.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a4.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a5.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a6.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a7.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a8.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a9.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img src="artista/a10.jpg" alt="">
+						</div>
+						
+					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
 
 	<!-- FOOTER -->
 	<footer>
+
 		<a href="#inicio" class="arriba">
+
 			<i class="fa-solid fa-angles-up"></i>
 		</a>
+		
 		<div class="redes">
-				<a href="https://www.facebook.com/profile.php?id=100064363556502"><i class="fa-brands fa-facebook-f"></i></a>
-				<a href="https://www.instagram.com/art_mau92/"><i class="fa-brands fa-instagram"></i></a>
-				<a href="https://wa.me/c/51940007944"><i class="fa-brands fa-whatsapp"></i></a>
-				<a href="https://www.tiktok.com/@mau.cristina?_t=8bscEE5tyqb&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-				<a href="mailto:mau.art92@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-			</div>
-			
+
+			<a href="https://www.facebook.com/profile.php?id=100064363556502"><i class="fa-brands fa-facebook-f"></i></a>
+
+			<a href="https://www.instagram.com/art_mau92/"><i class="fa-brands fa-instagram"></i></a>
+
+			<a href="https://wa.me/c/51940007944"><i class="fa-brands fa-whatsapp"></i></a>
+
+			<a href="https://www.tiktok.com/@mau.cristina?_t=8bscEE5tyqb&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+
+			<a href="mailto:mau.art92@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+
+		</div>
+	
 			&copy; 2023 Celeste
+
 	</footer>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="script.js"></script>
 
 </body>
