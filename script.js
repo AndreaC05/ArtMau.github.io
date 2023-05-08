@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		dist: -80,
 		shift: 5,
 		padding: 6,
-		numVisible: 4,
+		numVisible: 5,
 		indicators: true,
 		noWrap: false
 

@@ -321,7 +321,7 @@ html{
 
 .retrato .contenido-seccion .carousel {
 
-	min-height: 500px;
+	min-height: 400px;
 
 }
 
@@ -332,8 +332,8 @@ html{
 	justify-content: center;
 	align-items: center;
 	user-select: none;
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 
 }
 
@@ -427,7 +427,7 @@ html{
 	padding: 0px 0px;
 }
 .pintura .contenido-seccion .carousel {
-	min-height: 500px;
+	min-height: 400px;
 }
 
 .pintura .contenido-seccion .row .col .carousel .carousel-item {
@@ -436,8 +436,8 @@ html{
 	justify-content: center;
 	align-items: center;
 	user-select: none;
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 }
 
 .pintura .carousel .carousel-item img{
@@ -503,7 +503,7 @@ html{
 	padding: 0px 0px;
 }
 .artista .contenido-seccion .carousel {
-	min-height: 500px;
+	min-height: 400px;
 }
 
 .artista .contenido-seccion .row .col .carousel .carousel-item {
@@ -512,8 +512,8 @@ html{
 	justify-content: center;
 	align-items: center;
 	user-select: none;
-	width: 500px;
-	height: 500px;
+	width: 400px;
+	height: 400px;
 }
 
 .artista .carousel .carousel-item img{
