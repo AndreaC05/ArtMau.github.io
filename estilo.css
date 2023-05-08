@@ -538,10 +538,19 @@ html{
 footer{
 	background: linear-gradient(380deg, rgba(245,125,5,1) 0%, rgba(250,198,5,1) 100%);
 	color: #fff;
-	padding: 30px 0 10px 0;
+	padding: 20px 0 8px 0;
 	text-align: center;
 	position: relative;
 	width: 100%;
+}
+
+footer h3{
+	font-size: 30px;
+	font-family: 'Righteous';
+	text-shadow: 3px  0px 0px #ff5500,
+               0px  3px 0px #ff5500,
+              -3px  0px 0px #ff5500,
+               0px -3px 0px #ff5500;
 }
 footer .redes{
 	margin-bottom: 20px;
